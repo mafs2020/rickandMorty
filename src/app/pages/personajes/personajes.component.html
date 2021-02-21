@@ -1,0 +1,17 @@
+<div class="contenido" *ngIf="!dataFound; else elseBlock" infiniteScroll [infiniteScrollDistance]="2" (scrolled)="onScroll()" >
+    <!-- (window:scroll)="doSomethingOnScroll($event)" [infiniteScrollThrottle]="50" -->
+    <app-personaje class="card" *ngFor="let personaje of personajes"
+    (eliminarPersonaje)="usuarioEliminado($event)" [personajeInput]="personaje"></app-personaje>
+</div>
+
+<ng-template #elseBlock class="no-data">
+    <p>no hay conincidencias</p>
+</ng-template>
+
+<!-- el boton para ir arriba -->
+<div class="arriba" (click)="irArriba()" *ngIf="currentScroll > 200">
+    <p>&#8593;</p>
+</div>
+<!-- <div class="no-data">
+    <p>ya no hay mas informacion</p>
+</div> -->

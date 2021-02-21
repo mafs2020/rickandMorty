@@ -1,0 +1,18 @@
+
+<div *ngIf="personaje$ | async as personaje; else nodata;" class="card-details">
+
+    <app-personaje class="card" [personajeInput]="personaje"></app-personaje>
+
+</div>
+<ng-template #nodata>
+    <p>cargando informacion...</p>
+</ng-template>
+<div *ngIf="error">
+    <p>ocurrio un error al cargar info.  {{ errorMessage }} </p>
+</div>
+<br />
+<br />
+<hr />
+<input class="button" type="button" value="regresar" (click)="regresar()">
+<br />
+<br />

@@ -1,0 +1,8 @@
+<header class="navbar">
+    <nav>
+        <ul>
+            <a [routerLink]="'/'">Inicio</a>
+        </ul>
+        <input class="boton" type="text" [(ngModel)]="data" name="data" (ngModelChange)="dataChanged($event)">
+    </nav>
+</header>

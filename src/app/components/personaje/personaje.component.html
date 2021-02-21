@@ -1,0 +1,23 @@
+<div [routerLink]="['/personaje', personajeInput.id ] ">
+    <img [src]="personajeInput.image" [alt]="personajeInput.name">
+    <p>{{ personajeInput.name }}</p>
+    <!-- <p>{{personajeInput.status}}</p> -->
+    <div [ngSwitch]="personajeInput.status">
+        <input *ngSwitchCase="'Alive'" class="botonVivo" type="button" [value]="personajeInput.status">
+        <input *ngSwitchCase="'Dead'" class="botonDesconocido" type="button" [value]="personajeInput.status">
+        <input *ngSwitchCase="'unknown'" class="botonMuerto" type="button" [value]="personajeInput.status">
+        <!-- <input class="boton" type="button" [value]="personajeInput.status" *ngSwitchDefault> -->
+    </div>
+    <!-- <input class="boton" type="button" [value]="personajeInput.status"> -->
+    <p>{{ personajeInput?.species == null ? '' : personajeInput?.species}}</p>
+    <p>{{ personajeInput?.type == null ? '' : personajeInput?.type }}</p>
+    <p class="gg">{{ personajeInput?.gender == null ? '' : personajeInput?.gender }}</p>
+    <!-- <input type="button" (click)="eliminar()" value="Eliminar"> -->
+    <!-- <div class="prueba" style="background-color: red; height: 100px;">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+    <!-- <div class="izquierda" style="background-color: blue; height: 100px;">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+
+</div>

@@ -2,7 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { fromEvent, Observable, Subscription } from 'rxjs';
-import { auditTime, switchMap, take } from 'rxjs/operators';
+import { auditTime, switchMap, take, tap } from 'rxjs/operators';
 import { IPersonaje } from 'src/app/interfaces';
 import { PersonajesService } from 'src/app/services/personajes.service';
 
@@ -32,6 +32,7 @@ export class PersonajesComponent implements OnInit {
     ) { }
   
   ngOnInit(): void {
+    console.log('object');
     this._document.addEventListener('scroll', () => this.currentScroll = window.scrollY);
     this.obtener();
     this.personajesSrv.personaje$.subscribe(
@@ -45,7 +46,7 @@ export class PersonajesComponent implements OnInit {
   }
 
   obtener(): void {
-    this.suscription = this.personajesSrv.getTodosPersonajeByNAme()
+    this.suscription = this.personajesSrv.getTodosPersonajeByNAme().pipe(tap(ff => console.log(ff)))
     .subscribe(results => this.personajes = results);
 
   }

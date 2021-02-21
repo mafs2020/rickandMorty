@@ -1,7 +1,9 @@
-<div class="contenido" *ngIf="!dataFound; else elseBlock" infiniteScroll [infiniteScrollDistance]="2" (scrolled)="onScroll()" >
+<div class="contenido" *ngIf="!dataFound; else elseBlock">
     <!-- (window:scroll)="doSomethingOnScroll($event)" [infiniteScrollThrottle]="50" -->
     <app-personaje class="card" *ngFor="let personaje of personajes"
-    (eliminarPersonaje)="usuarioEliminado($event)" [personajeInput]="personaje"></app-personaje>
+    (eliminarPersonaje)="usuarioEliminado($event)" [personajeInput]="personaje">
+    {{ personaje | json }}
+</app-personaje>
 </div>
 
 <ng-template #elseBlock class="no-data">

@@ -13,6 +13,7 @@ export class PersonajeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('llego hasta aqui');
   }
 
   eliminar(): void{

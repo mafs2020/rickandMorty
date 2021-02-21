@@ -3,6 +3,11 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
+  "dot-notation": "off",
+  "allowPrivateClassPropertyAccess": false,
+  "allowKeywords": false,
+  // "allowKeywords": false,
+  // "@typescript-eslint/dot-notation": ["error"],
   "overrides": [
     {
       "files": [

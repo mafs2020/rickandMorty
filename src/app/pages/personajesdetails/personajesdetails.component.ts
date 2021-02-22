@@ -18,7 +18,7 @@ export class PersonajesdetailsComponent implements OnInit {
   errorMessage: string;
   constructor(
     private route: ActivatedRoute,
-    private location: Location,
+    // private location: Location,
     private personajeSrv: PersonajesService
     ) { }
 

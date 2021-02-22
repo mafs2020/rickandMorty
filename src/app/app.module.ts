@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { PagesModule } from './pages/pages.module';
+
 // shared module
 import { SharedModule } from './shared/shared.module';
 
@@ -11,14 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 // rutas
 import { routerModuleAPP } from './app.routes';
 import { InicioComponent } from './pages/inicio/inicio.component';
-import { PersonajeComponent } from './components/personaje/personaje.component';
-import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    PersonajeComponent
   ],
   imports: [
     BrowserModule,

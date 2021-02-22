@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #880e4f;
+    background-color: #1687a7;
     position: sticky;
     top: 0;
     color: #fff;
@@ -36,7 +36,7 @@ ul a {
     margin-left: 15px;
     text-transform: uppercase;
     color: #fff;
-    background-color: #f44336;
+    background-color: #8ac4d0;
     border-radius: 10px;
     padding: 14px 25px;
     text-align: center;
@@ -72,5 +72,8 @@ li{
         align-items: center;
         justify-content: center;
         margin: 10px auto;
+    }
+    .boton{
+        display: none;
     }
 }

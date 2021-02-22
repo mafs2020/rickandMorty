@@ -1,0 +1,195 @@
+.mide{
+    width: 33%;
+}
+
+p{
+    margin: 10px auto 0;
+    text-align: center;
+    align-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 15px;
+    // border: 1px solid #000;
+}
+
+// p .gg{
+//     margin-bottom: 15px;
+//     display: block;
+// }
+
+
+// .gg p:last-child{
+//     margin-bottom: 15px;
+// }
+
+img{
+    align-content: center;
+    margin: auto 0;
+    border-radius: 15px;
+    // border-top-left-radius: 15px;
+    // border-top-right-radius: 15px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+}
+
+input[type=button]{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.botonVivo{
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color: #73AD21;
+    border: 3px solid #73AD21;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: #73AD21;
+    }
+}
+
+
+.botonDesconocido{
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color: #ad2121;
+    border: 3px solid #ad2121;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: #ad2121;
+    }
+}
+.botonMuerto{
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color: #2152ad;
+    border: 3px solid #2152ad;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: #2152ad;
+    }
+}
+
+@media screen and (max-width: 300px){
+    // .card{
+    //     margin: 10px 20px;
+    //     width: 100%;
+    // }
+
+}
+
+// .button1 {
+//     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+//   }
+  
+//   .button2:hover {
+//     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+//   }
+
+// .button {
+//     display: inline-block;
+//     border-radius: 4px;
+//     background-color: #f4511e;
+//     border: none;
+//     color: #FFFFFF;
+//     text-align: center;
+//     font-size: 28px;
+//     padding: 20px;
+//     width: 200px;
+//     transition: all 0.5s;
+//     cursor: pointer;
+//     margin: 5px;
+//   }
+  
+//   .button span {
+//     cursor: pointer;
+//     display: inline-block;
+//     position: relative;
+//     transition: 0.5s;
+//   }
+  
+//   .button span:after {
+//     content: '\00bb';
+//     position: absolute;
+//     opacity: 0;
+//     top: 0;
+//     right: -20px;
+//     transition: 0.5s;
+//   }
+  
+//   .button:hover span {
+//     padding-right: 25px;
+//   }
+  
+//   .button:hover span:after {
+//     opacity: 1;
+//     right: 0;
+//   }
+
+a:link {text-decoration:none;color:#0000cc;}
+a:visited {text-decoration:none;color:#ffcc33;}
+a:active {text-decoration:none;color:#ff0000;}
+a:hover {text-decoration:underline;color:#999999;font-weight:bold}
+
+.prueba {
+    animation-name: nombre_fotograma_clave;
+    animation-duration: 5s;
+    // animation-iteration-count: 10;
+
+}
+
+.izquerda {
+    animation-name: izquierda_derecha;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;/*para que vuelva a su posicion inicial */
+}
+
+
+@keyframes nombre_fotograma_clave {
+    0% {
+        height: 10px;
+    }
+    40% {
+        left: 150px;
+    }
+    60% {
+        left: 75px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+
+@keyframes izquierda_derecha {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px;
+    }
+}

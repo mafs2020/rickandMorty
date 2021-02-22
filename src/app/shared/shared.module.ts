@@ -7,15 +7,18 @@ import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { PersonajeComponent } from '../components/personaje/personaje.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PersonajeComponent
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PersonajeComponent
   ],
   imports: [
     CommonModule,

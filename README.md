@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
+## Vistas Responsivas
+
+### Celular
+![alt text](https://github.com/mafs2020/rickandMorty/blob/main/src/assets/cel.png)
+
+### Tablet
+![alt text](https://github.com/mafs2020/rickandMorty/blob/main/src/assets/tablet.png)
+
+### Normal
+![alt text](https://github.com/mafs2020/rickandMorty/blob/main/src/assets/dashboard.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
